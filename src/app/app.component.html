@@ -1,20 +1,117 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<div class="background-pic">
+    <mat-toolbar class="header-toolbar">
+        <span class="fill-remaining-space">Joe Sema's Portfolio</span>
+        <div class="toolbar-buttons">
+            <button (click)="displayAboutMe()" mat-raised-button>About Me</button>
+            <button (click)="displayResume()" mat-raised-button>Resume</button>
+            <button (click)="displayProjects()" mat-raised-button>Projects</button>
+        </div>
+      </mat-toolbar>
+  <div class="background-text">
+    <h1 style="font-size: 50px;">Joe Sema</h1>
+    <h1>Full Stack Software Engineer</h1>
+  </div>
+</div>
+
+<!-- About Me Section -->
+
+<div class="example-section">
+    <h1>About Me</h1>
+    <img src="assets/images/profile-pic.jpg" alt="Picture Here" style="width:300px;height:300px;">
+    <p>I graduated from The Pennslyvania State University in May 2018 with 
+        Bachalors of Science (B.S.) in Information Sciences and Technology.
+        I'm currently a Software Engineer working The Vanguard Group Inc. on their Global Investement
+        Systems.
+        <br><br>
+        I work on Full Stack applications and I'm super passionate about using my skills 
+        to engineer software and systems to provide solutions to real world problems. 
+        I have a repository of personal projects that I
+        work on in my spare time and along with that, lots of Data Structures and Algorithms problems
+        I use to keep my problem solving skills sharp.
+        <br><br>
+      </p>
+</div>
+
+<div class="example-section">
+    <h1>Resume</h1>
+    <p>
+        Check out my <a href="/assets/files/joeSemaResume.pdf">Full Resume!</a> <br> <br>
+        In the meantime, here are some Technologies I have experience in: <br> <br>
+    </p>
+    
+    <div class="row">
+            <div class="column">
+                <p style="border-bottom-style: solid; border-bottom-color:cadetblue;">Languages</p>
+                <ul style="list-style-type:none;"> 
+                    <li>Java</li> 
+                    <li>Python</li> 
+                    <li>C++</li> 
+                    <li>SQL</li> 
+                    <li>HTML</li> 
+                    <li>CSS</li>  
+                    <li>JavaScript</li>  
+                    <li>Typescript</li>
+                </ul>
+            </div>
+            <div class="column">
+                <p style="border-bottom-style: solid; border-bottom-color:cadetblue;">Frameworks</p>
+                <ul style="list-style-type:none;">
+                    <li>Java Spring</li>
+                    <li>Angular 7.0</li> 
+                    <li>Appium</li> 
+                    <li>Junit / Mockito</li>
+                </ul>
+            </div>
+            <div class="column">
+                <p style="border-bottom-style: solid; border-bottom-color:cadetblue;">Technologies</p>
+                <ul style="list-style-type:none;">
+                    <li>AWS</li> 
+                    <li>Google Firebase</li> 
+                    <li>IBM Watson</li> 
+                    <li>Adriod Studio</li> 
+                    <li>Git</li> 
+                    <li>Cucumber</li>  
+                    <li>Selenium WebDriver</li>  
+                    <li>Heroku</li>
+                    <li>Java Processing</li>
+                </ul>
+            </div>
+    </div>
+        
+</div>
+
+<div class="example-section">
+        <h1>Projects</h1>
+        <p>I graduated from The Pennslyvania State University in May 2018 with 
+            Bachalors of Science (B.S.) in Information Sciences and Technology.
+            I'm currently a Software Engineer working The Vanguard Group Inc. on their Global Investement
+            Systems.
+            <br><br>
+            I work on Full Stack applications and I'm super passionate about using my skills 
+            to engineer software and systems to provide solutions to real world problems. 
+            I have a repository of personal projects that I
+            work on in my spare time and along with that, lots of Data Structures and Algorithms problems
+            I use to keep my problem solving skills sharp.
+            <br><br>
+        </p>
+</div>
+
+  <!-- TODO:
+    
+    -Use Angular:
+        -Routing to Resume page
+        -Adding Different Services with Dependency Injection
+        -Use NgFor and NgIf 
+        -Depoly Site
+
+        -fix spacing in list under technolgoies
+        -add link for resume
+        -fix line under list titles -> break into parts
+
+-->
+  
+<!-- Resume Section -->
+
+<!-- Projects Section -->
